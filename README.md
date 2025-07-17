@@ -1,8 +1,8 @@
-# temperature_7seg
+# Monitoring Temperature on 7-Segment
 </br>
 
-This project contain a code based on connection between TM1638 , Esp8266 , SHT20 and a 7-segment ( LTD-322KD-31 );</br>
-
+This project contain a code based on connection between TM1638 , Esp8266 , SHT20 and a 7-segment (LTD-322KD-31);
+</br>
 that monitoring Temperature and Humidity on serial monitor and shows the temperature on 7-segment.
 </br>
 </br>
@@ -23,16 +23,16 @@ and sent to the ESP8266. Then, by connecting this component and the TM1638, the 
 # List of Libraires which used in this code :
 </br>
 
-DFRobot_SHT20.h
+1- DFRobot_SHT20.h
 </br>
 
-TM1638.h
+2- TM1638.h
 
 </br>
 </br>
 
-you can read other discriptions about some parts of the code in below link : </br>
+*** you can read other discriptions about some parts of the code in below link : </br>
 
-https://github.com/Sobhanht/Brightness_Temp/blob/main/README.md
+<< https://github.com/Sobhanht/Brightness_Temp/blob/main/README.md >>
 </br>
 
