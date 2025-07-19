@@ -14,10 +14,11 @@
     case 7: return 0b11000100;
     case 8: return 0b11111111;
     case 9: return 0b11011111;
-    case 0: return 0b11111110;fir
+    case 0: return 0b11111110;
     default: return 0b00000000;
   }
 }
+  int brightness  = 0;
 void setup() {
   // put your setup code here, to run once:
 
