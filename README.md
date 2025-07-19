@@ -83,7 +83,6 @@ A- Extract the ones (unit) digit of the temperature. </br>
 ```C++ 
 int dahgan = temperature / 10;
 ```
-</br>
 B- Extract the tens digit of the temperature.</br>
 </br>
 
@@ -91,12 +90,10 @@ B- Extract the tens digit of the temperature.</br>
 ```C++
 tm.displayDig(7, getBinaryForNumber(dahgan));
 ```
-</br>
 A- Display the tens digit on the leftmost 7-segment (position 7)</br>
 ```C++ 
 tm.displayDig(6, getBinaryForNumber(yekan));
 ```
-</br>
 B-  Display the ones digit on the segment next to it (position 6)</br>
 
 
