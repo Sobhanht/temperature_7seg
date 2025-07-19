@@ -9,5 +9,6 @@ void setup() {
 void loop() {
   sht20.initSHT20();
   delay(100);
+  pinMode(ledPin, OUTPUT);
 
 }
