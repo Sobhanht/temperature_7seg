@@ -15,4 +15,6 @@ void loop() {
 
   Serial.print("Time");
   Serial.print(millis());
+  Serial.print("Temprature:");
+  Serial.print(temperature);
 }
