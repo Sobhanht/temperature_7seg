@@ -20,7 +20,7 @@
 }
   int brightness  = 0;
 void setup() {
-  // put your setup code here, to run once:
+  tm.displaySetBrightness(PULSE14_16);
 
 }
 
