@@ -39,7 +39,7 @@ and sent to the ESP8266. Then, by connecting this component and the TM1638, the 
 # Hints :</br>
 </br>
 *** Hint -1 : </br>
-```C++ 
+```C++
 byte getBinaryForNumber(int num) {
    switch (num) {
     case 1: return 0b11000000;
@@ -55,7 +55,7 @@ byte getBinaryForNumber(int num) {
     default: return 0b00000000;
   }
 }
-``` 
+```
 </br>
 A- This function takes a number from 0 to 9 and returns the corresponding binary value for displaying it on a 7-segment display.</br>
 B- Each bit in the returned byte represents the on/off state of a segment in the display.</br>
@@ -64,7 +64,7 @@ C- Note: The binary values may vary depending on the type and configuration of t
 *** Hint -2:</br>
 ```C++ 
 tm.displaySetBrightness(PULSE14_16);
-``` 
+```
 </br>
 A- Set the brightness of the 7-segment display to a high level (approximately 90–100%)</br>
 </br>
