@@ -35,4 +35,71 @@ and sent to the ESP8266. Then, by connecting this component and the TM1638, the 
 
 << https://github.com/Sobhanht/Brightness_Temp/blob/main/README.md >>
 </br>
+</br>
+# Hints :</br>
+</br>
+*** Hint -1 : </br>
+```C++ 
+byte getBinaryForNumber(int num) {
+   switch (num) {
+    case 1: return 0b11000000;
+    case 2: return 0b10110111;
+    case 3: return 0b11010111;
+    case 4: return 0b11001001;
+    case 5: return 0b01011111;
+    case 6: return 0b01111111;
+    case 7: return 0b11000100;
+    case 8: return 0b11111111;
+    case 9: return 0b11011111;
+    case 0: return 0b11111110;
+    default: return 0b00000000;
+  }
+}
+``` 
+</br>
+A- This function takes a number from 0 to 9 and returns the corresponding binary value for displaying it on a 7-segment display.</br>
+B- Each bit in the returned byte represents the on/off state of a segment in the display.</br>
+C- Note: The binary values may vary depending on the type and configuration of the 7-segment display.</br>
+</br>
+*** Hint -2:</br>
+```C++ 
+tm.displaySetBrightness(PULSE14_16);
+``` 
+</br>
+A- Set the brightness of the 7-segment display to a high level (approximately 90–100%)</br>
+</br>
+*** Hint -3:</br>
+```C++
+  int temperature = round(temp)
+```
+</br>
+A- Round the temperature value to the nearest whole number and store it in 'temperature'.</br>
+</br>
+*** Hint -4:</br>
+```C++ 
+int yekan = temperature % 10;
+``` </br>
+A- Extract the ones (unit) digit of the temperature. </br>
+```C++ 
+int dahgan = temperature / 10;
+```
+</br>
+B- Extract the tens digit of the temperature.</br>
+</br>
+*** Hint -5: </br>
+```C++
+tm.displayDig(7, getBinaryForNumber(dahgan));
+```
+</br>
+A- Display the tens digit on the leftmost 7-segment (position 7)</br>
+```C++ 
+tm.displayDig(6, getBinaryForNumber(yekan));
+```
+</br>
+B-  Display the ones digit on the segment next to it (position 6)</br>
+
+
+
+
+
 
