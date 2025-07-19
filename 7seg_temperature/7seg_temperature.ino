@@ -23,6 +23,7 @@ void setup() {
   tm.displaySetBrightness(PULSE14_16);
   tm.reset();
   tm.test ();
+  Serial.begin(115200);
 
 }
 
