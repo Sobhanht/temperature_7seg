@@ -21,6 +21,8 @@
   int brightness  = 0;
 void setup() {
   tm.displaySetBrightness(PULSE14_16);
+  tm.reset();
+  tm.test ();
 
 }
 
