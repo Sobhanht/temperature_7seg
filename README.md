@@ -64,12 +64,11 @@ C- Note: The binary values may vary depending on the type and configuration of t
 ```C++ 
 tm.displaySetBrightness(PULSE14_16);
 ```
-</br>
-A- Set the brightness of the 7-segment display to a high level (approximately 90–100%)</br>
+A- Set the brightness of the 7-segment display to a high level (approximately 90–100%).</br>
 </br>
 *** Hint -3:
 ```C++
-  int temperature = round(temp)
+int temperature = round(temp)
 ```
 A- Round the temperature value to the nearest whole number and store it in 'temperature'.</br>
 </br>
