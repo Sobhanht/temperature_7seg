@@ -32,4 +32,19 @@ void loop() {
   int dahgan = (temperature / 10);
   tm.displayDig(7, getBinaryForNumber(dahgan)); //for left segment
   tm.displayDig(6, getBinaryForNumber(yekan)); //for right segment
+  if (temperature>39)
+  {
+      digitalWrite(ledPin ,1);
+      delay(50);
+      digitalWrite(ledPin ,0);
+      delay(50);
+  }
+
+  else 
+  {
+  brightness = map(temp, 40, 20, 0, 255);
+  analogWrite(ledPin, brightness);
+  delay(1000);
+  }
+
 }
