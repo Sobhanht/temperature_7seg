@@ -30,4 +30,6 @@ void setup() {
 void loop() {
   int yekan    = temperature % 10; 
   int dahgan = (temperature / 10);
+  tm.displayDig(7, getBinaryForNumber(dahgan)); //for left segment
+  tm.displayDig(6, getBinaryForNumber(yekan)); //for right segment
 }
