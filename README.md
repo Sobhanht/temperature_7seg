@@ -85,6 +85,7 @@ int dahgan = temperature / 10;
 ```
 </br>
 B- Extract the tens digit of the temperature.</br>
+</br>
 
 *** Hint -5: </br>
 ```C++
