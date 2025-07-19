@@ -10,5 +10,5 @@ void setup() {
 
 void loop() {
   float humd = sht20.readHumidity();
-
+  float temp = sht20.readTemperature();
 }
