@@ -7,6 +7,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  sht20.initSHT20();
+  delay(100);
 
 }
