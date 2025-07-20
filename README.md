@@ -93,6 +93,16 @@ tm.displayDig(6, getBinaryForNumber(yekan));
 ```
 B-  Display the ones digit on the segment next to it (position 6)</br>
 
+Board parts:
+<img width="1280" height="606" alt="image" src="https://github.com/user-attachments/assets/466b9a8d-3a53-470c-8e97-e95ddcb5e8d3" />
+ 1- SHT20 Temperature and Humedity sensor .</br>
+ 2- ESP8266 micro controler . </br>
+ 3- Onboard LED .</br>
+ 4- TM1638 ic .</br>
+ 5- 7-Segment (LTD-322KD-31)</br>
+</br>
+You can see how this board and program work in the Link below:</br>
+https://drive.google.com/file/d/14bUTkPwOohenCnhuUlnqbG6yIWm1A8Zo/view?usp=sharing
 
 
 
