@@ -92,8 +92,8 @@ A- Display the tens digit on the leftmost 7-segment (position 7)</br>
 tm.displayDig(6, getBinaryForNumber(yekan));
 ```
 B-  Display the ones digit on the segment next to it (position 6)</br>
-
-Board parts:
+</br>
+# Board parts:
 <img width="1280" height="606" alt="image" src="https://github.com/user-attachments/assets/466b9a8d-3a53-470c-8e97-e95ddcb5e8d3" />
  1- SHT20 Temperature and Humedity sensor .</br>
  2- ESP8266 micro controler . </br>
